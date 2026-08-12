@@ -1,71 +1,107 @@
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<title>Grid Template for Bootstrap</title>
-	</head>
+<html lang="vi">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <title>Dịch vụ - Tourist Spots</title>
 
-	<body>
-		<h1><img src="img/logo.jpg" /></h1>
-		<div>
-			<a href="#">Trang chủ</a>
-			<a href="#">Dịch vụ</a>
-			<a href="#">Về chúng tôi</a>
-			<a href="#">FAQ</a>
-			<a href="#">Liên hệ</a>
-		</div>
-		<hr />
-		<h2 style="margin: 0"><b>Các dịch vụ</b></h2>
-		<hr />
-		<div>
-			<p>Thành phố</p>
-			<div>
-				<p>19.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng VIP</p>
-				<p>Giảm giá 50%</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<div>
-			<p>Bãi biển</p>
-			<div>
-				<p>19.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng VIP</p>
-				<p>Thức ăn miễn phí</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<div>
-			<p>Tiết kiệm</p>
-			<div>
-				<p>9.999.999 VNĐ</p>
-				<p>Bao gồm mọi chi phí</p>
-				<p>1 Hướng dẫn viên</p>
-				<p>Phòng bình dân</p>
-				<p>Giảm giá thức ăn 10%</p>
-				<a href="#">Đăng ký ngay</a>
-			</div>
-		</div>
-		<hr />
-		<footer>
-			<div>
-				<p>© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
-				<ul>
-					<li><a href="#">Trang chủ</a></li>
-					<li><a href="#">Dịch vụ</a></li>
-					<li><a href="#">Về chúng tôi</a></li>
-					<li><a href="#">FAQ</a></li>
-					<li><a href="#">Liên hệ</a></li>
-				</ul>
-			</div>
-		</footer>
-	</body>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    </head>
+
+    <body class="bg-light fs-5 py-4">
+        <div class="container bg-white p-4 p-md-5 shadow-sm rounded">
+            
+            <header class="d-flex flex-wrap align-items-center justify-content-between pb-3 mb-4 border-bottom">
+                <div>
+                    <a href="index.html">
+                        <img src="img/logo.jpg" alt="Logo" class="img-fluid" style="max-height: 75px;" />
+                    </a>
+                </div>
+                <ul class="nav nav-pills fs-5">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-primary text-decoration-none">Trang chủ</a></li>
+                    <li class="nav-item"><a href="service.html" class="nav-link active bg-primary text-white text-decoration-none">Dịch vụ</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-primary text-decoration-none">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link text-primary text-decoration-none">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-primary text-decoration-none">Liên hệ</a></li>
+                </ul>
+            </header>
+
+            <section class="text-center my-4">
+                <h2 class="fw-semibold text-dark display-6">Các dịch vụ</h2>
+            </section>
+
+            <hr class="my-4" />
+
+            <section class="row text-center mb-5">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-header bg-light py-3">
+                            <h4 class="my-0 fw-semibold text-dark fs-4">Thành phố</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="fw-bold text-primary fs-3 mb-3">19.999.999 VNĐ</li>
+                                <li class="py-2 border-bottom text-secondary">Bao gồm mọi chi phí</li>
+                                <li class="py-2 border-bottom text-secondary">1 Hướng dẫn viên</li>
+                                <li class="py-2 border-bottom text-secondary">Phòng VIP</li>
+                                <li class="py-2 text-secondary">Giảm giá 50%</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary py-2 fs-5">Đăng ký ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-header bg-light py-3">
+                            <h4 class="my-0 fw-semibold text-dark fs-4">Bãi biển</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="fw-bold text-primary fs-3 mb-3">19.999.999 VNĐ</li>
+                                <li class="py-2 border-bottom text-secondary">Bao gồm mọi chi phí</li>
+                                <li class="py-2 border-bottom text-secondary">1 Hướng dẫn viên</li>
+                                <li class="py-2 border-bottom text-secondary">Phòng VIP</li>
+                                <li class="py-2 text-secondary">Thức ăn miễn phí</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary py-2 fs-5">Đăng ký ngay</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border">
+                        <div class="card-header bg-light py-3">
+                            <h4 class="my-0 fw-semibold text-dark fs-4">Tiết kiệm</h4>
+                        </div>
+                        <div class="card-body d-flex flex-column justify-content-between p-4">
+                            <ul class="list-unstyled mt-3 mb-4">
+                                <li class="fw-bold text-primary fs-3 mb-3">9.999.999 VNĐ</li>
+                                <li class="py-2 border-bottom text-secondary">Bao gồm mọi chi phí</li>
+                                <li class="py-2 border-bottom text-secondary">1 Hướng dẫn viên</li>
+                                <li class="py-2 border-bottom text-secondary">Phòng bình dân</li>
+                                <li class="py-2 text-secondary">Giảm giá thức ăn 10%</li>
+                            </ul>
+                            <button type="button" class="w-100 btn btn-lg btn-primary py-2 fs-5">Đăng ký ngay</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-4" />
+
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 fs-5">
+                <p class="col-md-6 mb-0 text-muted">© Bản quyền thuộc về Công ty Du lịch Bụi.</p>
+                <ul class="nav col-md-6 justify-content-end">
+                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-primary text-decoration-none">Trang chủ</a></li>
+                    <li class="nav-item"><a href="service.html" class="nav-link px-2 text-primary text-decoration-none">Dịch vụ</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link px-2 text-primary text-decoration-none">Về chúng tôi</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link px-2 text-primary text-decoration-none">FAQ</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-primary text-decoration-none">Liên hệ</a></li>
+                </ul>
+            </footer>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
 </html>
